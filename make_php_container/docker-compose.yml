@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  php:
+    image: php:7
+    volumes:
+      - ./hello.php:/usr/src/myapp/hello.php
+    working_dir: /usr/src/myapp
+    command: php hello.php
